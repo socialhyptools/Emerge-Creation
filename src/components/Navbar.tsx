@@ -37,7 +37,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 shrink-0">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/logo.png" alt="Emerge Creation Logo" className="h-10 w-auto object-contain" />
+            <img src="/logo.png" alt="Emerge Creation Logo" className="h-14 w-auto object-contain" />
           </Link>
 
           {/* Desktop Nav */}
