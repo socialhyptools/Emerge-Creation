@@ -1,26 +1,56 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --color-primary: #0B3C6E;
+  --color-brand-blue: #1A5C96;
+  --color-blue-tint: #E6F4FB;
+  --color-teal: #1D9E75;
+  --color-teal-light: #E1F5EE;
+  --color-orange: #FF6B35;
+  --color-cool-white: #F4F7FA;
+  --color-card: #FFFFFF;
+  --color-ink: #1A2B3C;
+  --color-steel: #4A6080;
+  --color-border: #D0DCEA;
+  --color-orange-tint: #FFF0EB;
+  --color-footer-bottom: #07274A;
+
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-heading: "Poppins", system-ui, sans-serif;
+  --font-tamil: "Noto Sans Tamil", system-ui, sans-serif;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  body {
+    background-color: var(--color-cool-white);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer utilities {
+  .font-tamil {
+    font-family: var(--font-tamil);
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .gradient-hero {
+    background: linear-gradient(135deg, #0B3C6E 0%, #1A5C96 100%);
+  }
+
+  .gradient-teal {
+    background: linear-gradient(135deg, #1D9E75 0%, #1A5C96 100%);
+  }
 }
