@@ -9,10 +9,10 @@ export const metadata: Metadata = {
 };
 
 const contactItems = [
-  { icon: Phone, label: "Call Us", value: "+91 99944 45555", href: "tel:+919994445555" },
-  { icon: MessageCircle, label: "WhatsApp", value: "Chat on WhatsApp", href: "https://wa.me/919994445555" },
-  { icon: Mail, label: "Email", value: "hello@emergedigital.in", href: "mailto:hello@emergedigital.in" },
-  { icon: MapPin, label: "Office", value: "No. 42, Anna Nagar East, Chennai – 600 102", href: "#" },
+  { icon: Phone, label: "Call Us", value: "+91 95439 15430", href: "tel:+919543915430" },
+  { icon: MessageCircle, label: "WhatsApp", value: "Chat on WhatsApp", href: "https://wa.me/919543915430" },
+  { icon: Mail, label: "Email", value: "info@emergecreation.com", href: "mailto:info@emergecreation.com" },
+  { icon: MapPin, label: "Office", value: "No.9A 1st Floor, Eswari Nagar, 1st Street, Gowrivakkam, Chennai-73", href: "#" },
   { icon: Clock, label: "Hours", value: "Mon–Sat: 9:00 AM – 7:00 PM IST", href: "#" },
 ];
 
@@ -128,8 +128,8 @@ export default function ContactPage() {
               >
                 <div className="text-center">
                   <div className="text-3xl mb-2">📍</div>
-                  <div>Anna Nagar East, Chennai</div>
-                  <div className="text-xs mt-1" style={{ color: "#4A6080" }}>600 102</div>
+                  <div>Gowrivakkam, Chennai</div>
+                  <div className="text-xs mt-1" style={{ color: "#4A6080" }}>600 073</div>
                 </div>
               </div>
             </div>

@@ -6,7 +6,7 @@ export default function WhatsAppButton() {
   const message = encodeURIComponent(
     "Hi Emerge Digital! I'd like to know more about your healthcare marketing services."
   );
-  const phone = "919994445555";
+  const phone = "919543915430";
 
   return (
     <a

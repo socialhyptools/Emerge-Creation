@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Menu, X, Phone } from "lucide-react";
 
 const navLinks = [
@@ -11,6 +12,7 @@ const navLinks = [
   { label: "Case Studies", href: "/case-studies" },
   { label: "About", href: "/about" },
   { label: "Blog", href: "/blog" },
+  { label: "Contact", href: "/contact" },
 ];
 
 export default function Navbar() {
@@ -34,20 +36,14 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16 lg:h-18">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 shrink-0">
-            <div
-              className="w-9 h-9 rounded-lg flex items-center justify-center font-bold text-lg"
-              style={{ backgroundColor: "#1D9E75", color: "#fff" }}
-            >
-              E
-            </div>
-            <div className="text-white">
-              <div className="font-bold text-lg leading-none" style={{ fontFamily: "var(--font-heading)" }}>
-                Emerge
-              </div>
-              <div className="text-xs leading-none" style={{ color: "rgba(255,255,255,0.7)" }}>
-                Digital
-              </div>
-            </div>
+            <Image
+              src="/logo.png"
+              alt="Emerge Creation Logo"
+              width={120}
+              height={48}
+              className="h-10 w-auto object-contain"
+              priority
+            />
           </Link>
 
           {/* Desktop Nav */}
@@ -73,12 +69,12 @@ export default function Navbar() {
           {/* Desktop CTA */}
           <div className="hidden lg:flex items-center gap-3">
             <a
-              href="tel:+919994445555"
+              href="tel:+919543915430"
               className="flex items-center gap-1.5 text-sm font-medium"
               style={{ color: "rgba(255,255,255,0.85)" }}
             >
               <Phone size={15} />
-              +91 99944 45555
+              +91 95439 15430
             </a>
             <Link
               href="/contact"
