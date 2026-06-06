@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image from "next/image";
+
 import { MapPin, Phone, Mail, MessageCircle } from "lucide-react";
 
 const services = [
@@ -36,13 +36,8 @@ export default function Footer() {
           {/* Brand */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-2 mb-4">
-              <Image
-                src="/logo.png"
-                alt="Emerge Creation Logo"
-                width={140}
-                height={56}
-                className="h-12 w-auto object-contain"
-              />
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/logo.png" alt="Emerge Creation Logo" className="h-12 w-auto object-contain" />
             </div>
             <p className="text-sm leading-relaxed mb-5" style={{ color: "rgba(255,255,255,0.75)" }}>
               Tamil Nadu&apos;s only digital marketing agency exclusively for hospitals, clinics,

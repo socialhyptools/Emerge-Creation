@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import Image from "next/image";
+
 import { Menu, X, Phone } from "lucide-react";
 
 const navLinks = [
@@ -36,14 +36,8 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16 lg:h-18">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 shrink-0">
-            <Image
-              src="/logo.png"
-              alt="Emerge Creation Logo"
-              width={120}
-              height={48}
-              className="h-10 w-auto object-contain"
-              priority
-            />
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/logo.png" alt="Emerge Creation Logo" className="h-10 w-auto object-contain" />
           </Link>
 
           {/* Desktop Nav */}
